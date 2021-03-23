@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+   <title>draw</title>
+   <style>
+        img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+        tr:nth-child(even){
+              background-color: royalblue;
+        }
+        body{
+          background-image: url(https://agileware.com.au/wp-content/uploads/2019/09/Lego-Light-Blue-background-1.png);
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        p{
+          text-align: center;
+        }
+        
+   </style>
+</head>
+<body>
+    <h1 style="color: red;">LEGO</h1>
+    <h3>click start to draw. </h3>
+        <img src="https://www.lego.com/cdn/cs/set/assets/blt4077c030eb5d127d/75318.jpg?fit=bounds&format=jpg&quality=80&width=1500&height=1500&dpr=1" alt="Trulli" width="800" height="550">
+   <button style=" padding: 15px 32px;">start</button> 
+   <p></p>
+   <table style="width: 200;">
+    <tr>
+      <th style="background-color: violet;">precent</th>
+      <th style="background-color: violet;">Price</th>
+    </tr>
+    <tr>
+      <td>10%</td>
+      <td></td>
+      
+    </tr>
+    <tr>
+      <td style="background-color: violet;">20%</td>
+      <td style="background-color: violet;"></td>
+
+    </tr>
+    <tr>
+      <td>30%</td>
+      <td></td>
+    
+    </tr>
+  </table>  
+  <button style="margin:auto; display: block;"><a href="http://127.0.0.1:5500/1.html"> back</a></button>
+  <p  style="font-size: 160%;text-align: center;"><a href="http://127.0.0.1:5500/check%20out.html">check out</a></p>
+
+</body> 
+<script>
+var button=document.querySelectorAll("button")[0];
+var p=document.querySelector("p");
+var arrs = ["10% ", "20% ", "30% ", "Nothing", "40% ","Nothing"];
+var two = ["60% ", "90% "];
+button.onclick=()=>{ timer = setInterval(() => {clearInterval(timer);
+var arr = arrs[Math.floor(Math.random() * arrs.length)]; p.innerHTML = arr;}, 10); }
+</script>
+</html> 
